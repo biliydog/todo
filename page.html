@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="./page.css">
+    <script src="./node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src='./node_modules/store/store.min.js' charset="utf-8"></script>
+    <script src="./node_modules/php-date-formatter/js/php-date-formatter.js" charset="utf-8"></script>
+    <script src="./node_modules/jquery-datetimepicker/jquery.datetimepicker.js" charset="utf-8"></script>
+    <script src="./page.js" charset="utf-8"></script>
+    <title>TODO</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="head">
+        待办事项
+      </div>
+      <form class="main-form">
+        <input type="text" placeholder="e.g.吃饭" autocomplete="off" autofocus >
+        <button type="button" class="main-button">添加</button>
+      </form>
+      <div class="content"> </div>
+      <div class="mask"></div>
+      <div class="confirm">
+        <div class="confirm-container">
+          <p></p>
+          <button type="button" class="yes">确定</button>
+          <button type="button" class="no">取消</button>
+        </div>
+      </div>
+      <div class="detail-container">
+        <h3>关于这次活动</h3>
+        <div>
+          <p class="detail-content"></p>
+          <p class="detail-calender"></p>
+        </div>
+        <form class="detail-form">
+          <input type="text" class="detail-msg" placeholder="编辑活动具体内容">
+          <label for="">提醒时间</label>
+          <input type="text" id="time">
+          <button type="submit" class='detail-button'>submit</button>
+        </form>
+      </div>
+    </div>
+    <video src="./node_modules/alert.mp3" class="alerter">
+
+    </video>
+  </body>
+</html>
